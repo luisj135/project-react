@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/material.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tag above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>MyReads</title>
+  </head>
+  <body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <div class="udacity-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+          <span class="udacity-title mdl-layout-title">
+            <a href="/">
+              <img class="udacity-logo-image" src="assets/images/psychology.png">
+              <h3>MyReads</h3>
+            </a>
+          </span>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="udacity-header-spacer mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <div class="udacity-navigation-container">
+            <nav class="udacity-navigation mdl-navigation">
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Category</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/search">Search</a>
+            </nav>
+          </div>
+          <span class="udacity-mobile-title mdl-layout-title">
+            <a href="/">
+              <img class="udacity-logo-image" src="assets/images/psychology.png">
+              <h3>MyReads</h3>
+            </a>
+          </span>
+          <button class="udacity-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+            <img class="udacity-logo-image" src="assets/images/hood.png">
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
+            <li class="mdl-menu__item">Dashboard</li>
+            <li disabled class="mdl-menu__item">New Category</li>
+            <li class="mdl-menu__item">Log Out</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="udacity-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
+          <img class="udacity-logo-image" src="images/udacity-logo-white.png">
+        </span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Home</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Category</a>
+          <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/search">Search</a>
+        </nav>
+      </div>
+
+      <div class="udacity-content mdl-layout__content">
+        <div class="udacity-screen-section mdl-typography--text-center">
+          <div id="root"></div>
+        </div>
+
+        <footer class="udacity-footer mdl-mega-footer">
+          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--left-section">
+              <span className="icon-facebook2"></span>
+              &nbsp;
+              <span className="icon-twitter"></span>
+              &nbsp;
+              <span className="icon-instagram"></span>
+            </div>
+            <div class="mdl-mega-footer--right-section">
+              <a class="mdl-typography--font-light" href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+              </a>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer--middle-section">
+            <p class="mdl-typography--font-light">© 2017 Factolabs, Prodigious</p>
+            <p class="mdl-typography--font-light">All rights reserved</p>
+          </div>
+
+        </footer>
+      </div>
+
+    </div>
+
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+  </body>
+
+  <script src="./assets/js/material.min.js"></script>
+</html>
